@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Hello word</h1>
-    <form action="processForm" method="get">
+    <form action="processFormVersionTwo" method="get">
         <input type="text" name="name" placeholder="name">
         <%--<input type="text" name="age" placeholder="age">--%>
         <input type="submit" value="submit">

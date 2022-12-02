@@ -9,11 +9,18 @@
 <html>
 <head>
     <title>Hello</title>
+    <link rel="stylesheet" type="text/css"
+
+          href="${pageContext.request.contextPath}/resources/css/my-test.css">
 </head>
 <body>
   Hello World of Spring MVC
 
 <br>
 Student name : ${param.name}
+<br> <br>
+The message : ${message}
+
+  <img src="${pageContext.request.contextPath}/resources/images/intelij.png">
 </body>
 </html>
