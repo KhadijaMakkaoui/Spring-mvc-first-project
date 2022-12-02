@@ -21,6 +21,8 @@ Student name : ${param.name}
 <br> <br>
 The message : ${message}
 
+<%--
   <img src="${pageContext.request.contextPath}/resources/images/intelij.png">
+--%>
 </body>
 </html>

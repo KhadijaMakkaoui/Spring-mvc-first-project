@@ -3,6 +3,7 @@ package com.example.mvcspring;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -30,6 +31,17 @@ public class HelloWordController {
         theName = theName.toUpperCase();
         //create the message
         String result = "Hey! " + theName;
+        //add message to the model
+        model.addAttribute("message", result);
+        return "helloworld";
+    }
+    @RequestMapping(value="/processFormVersionThree")
+    public String letsShoutDude(@RequestParam("name") String theName, Model model) {
+        //read the request parameter from the HTML form
+        //convert the data to all caps
+        theName = theName.toUpperCase();
+        //create the message
+        String result = "Hey my dear friend from v3! " + theName;
         //add message to the model
         model.addAttribute("message", result);
         return "helloworld";
