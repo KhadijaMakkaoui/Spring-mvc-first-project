@@ -7,9 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloWordController {
 
     //Show initial HTML form
-    @RequestMapping(value="/hello")
+    @RequestMapping(value="/showForm")
     public String showForm() {
         return "helloworld-form";
     }
     //Process the HTML form
+    @RequestMapping(value="/processForm")
+    public String processForm() {
+        return "helloworld";
+    }
 }
