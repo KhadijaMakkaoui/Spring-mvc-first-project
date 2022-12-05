@@ -12,10 +12,16 @@
 </head>
 <body>
     The student is confirmed with the following details:
-    <br>
+    <br><br>
 <%--
     Calls getFirstName() and getLastName() on the student object
 --%>
     ${student.firstName} ${student.lastName}
+    <br>
+    <br>
+    Country: ${student.country}
+    <br>
+    <br>
+    Favorite Language: ${student.favoriteLanguageOptions}
 </body>
 </html>
